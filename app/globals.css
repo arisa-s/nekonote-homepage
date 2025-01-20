@@ -103,4 +103,5 @@
 
 a:hover {
   color: var(--text-accent);
+  cursor: url(/images/cursor.png), pointer;
 }
