@@ -10,8 +10,8 @@ export const Navbar = () => (
     </a>
     <ul className="space-x-6 hidden md:flex">
       {Object.values(SECTIONS).map(({ key, title }) => (
-        <li>
-          <a key={key} href={`#${key}`} className="text-lg">
+        <li key={key}>
+          <a href={`#${key}`} className="text-lg">
             {title}
           </a>
         </li>
