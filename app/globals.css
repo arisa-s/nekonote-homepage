@@ -2,20 +2,105 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Default Light Mode */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --text-primary: #1c121e;
+  --text-secondary: #6b716a;
+  --bg: #FCF6F5;
+  --text-accent: #567EBE;
+  --text-invert: #fcfdfc;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Dark Mode */
+[data-theme="dark"] {
+  --text-primary: #fcfdfc;
+  --text-invert: #1c121e;
+  --text-secondary: #e0e4e0;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+
+/* THEME COLORS */
+[data-theme="light"][data-color="blue"] {
+  --bg: #FCF6F5;
+  --text-accent: #567EBE;
+  
+}
+
+[data-theme="light"][data-color="green"] {
+  --bg: #FCF6F5;
+  --text-accent: #2BAE66;
+}
+
+[data-theme="light"][data-color="purple"] {
+  --bg: #FAEBEF;
+  --text-accent: #333D79;
+}
+
+[data-theme="light"][data-color="yellow"] {
+  --bg: #FBF8BE;
+  --text-accent: #234E70;
+}
+
+[data-theme="light"][data-color="pink"] {
+  --bg: #FAEBEF;
+  --text-accent: #cf8360;
+}
+
+[data-theme="light"][data-color="brown"] {
+  --bg: #F9EBDE;
+  --text-accent: #815854;
+}
+
+/* Dark Mode Colors */
+[data-theme="dark"][data-color="blue"] {
+  --text-accent: #FCF6F5;
+  --bg: #567EBE;
+}
+
+[data-theme="dark"][data-color="green"] {
+  --text-accent: #FCF6F5;
+  --bg: #2BAE66;
+}
+
+[data-theme="dark"][data-color="purple"] {
+  --text-accent: #FAEBEF;
+  --bg: #333D79;
+}
+
+[data-theme="dark"][data-color="yellow"] {
+  --text-accent: #FBF8BE;
+  --bg: #234E70;
+}
+
+[data-theme="dark"][data-color="pink"] {
+  --bg: #cf8360;
+  --text-accent: #FAEBEF;
+}
+
+[data-theme="dark"][data-color="brown"] {
+  --bg: #815854;
+  --text-accent: #F9EBDE;
+}
+
+/* Utility Classes */
+.bg-primary {
+  background-color: var(--bg);
+}
+
+.text-primary {
+  color: var(--text-primary);
+  opacity: 1.0;
+}
+
+.text-secondary {
+  color: var(--text-primary);
+  opacity: 0.8;
+}
+
+.text-invert {
+  color: var(--text-invert);
+}
+
+a:hover {
+  color: var(--text-accent);
 }

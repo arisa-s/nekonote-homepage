@@ -9,8 +9,25 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "var(--text-primary)",
+        accent: "var(--text-accent)",
+        background: "var(--bg)",
+      },
+      backgroundColor: {
+        primary: "var(--bg)",
+        invert: "var(--text-invert)",
+      },
+      textColor: {
+        primary: "var(--text)",
+        secondary: "var(--text)",
+        invert: "var(--text-invert)",
+      },
+      fontFamily: {
+        accent: ["var(--font-accent)"],
+        base: ["var(--font-base)"],
+      },
+      borderColor: {
+        DEFAULT: "var(--text-accent)",
       },
     },
   },
