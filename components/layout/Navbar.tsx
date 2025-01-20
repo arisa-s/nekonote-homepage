@@ -11,7 +11,7 @@ export const Navbar = () => (
     <ul className="space-x-6 hidden md:flex">
       {Object.values(SECTIONS).map(({ key, title }) => (
         <li>
-          <a href={`#${key}`} className="text-lg">
+          <a key={key} href={`#${key}`} className="text-lg">
             {title}
           </a>
         </li>

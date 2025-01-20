@@ -6,7 +6,7 @@ export default function Home() {
     <div className="max-w-8xl mx-auto flex flex-col min-h-screen">
       <HeroSection />
       {Object.values(SECTIONS).map(({ key, component, title }) => (
-        <SectionLayout sectionKey={key} sectionTitle={title}>
+        <SectionLayout key={key} sectionKey={key} sectionTitle={title}>
           {component()}
         </SectionLayout>
       ))}
