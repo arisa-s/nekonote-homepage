@@ -1,4 +1,4 @@
-import { SECTIONS } from "@/app/page";
+import { SECTIONS } from "@/constants/homepage";
 
 export const Navbar = () => (
   <nav className="max-w-8xl mx-auto flex items-center justify-between py-6 px-6 md:px-20">
