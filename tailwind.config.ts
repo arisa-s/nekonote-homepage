@@ -10,7 +10,7 @@ export default {
     extend: {
       colors: {
         primary: "var(--text-primary)",
-        accent: "var(--text-accent)",
+        accent: "var(--canute)",
         background: "var(--bg)",
       },
       backgroundColor: {
@@ -27,7 +27,7 @@ export default {
         base: ["var(--font-base)"],
       },
       borderColor: {
-        DEFAULT: "var(--text-accent)",
+        DEFAULT: "var(--poncho)",
       },
     },
   },

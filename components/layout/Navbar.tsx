@@ -5,7 +5,7 @@ export const Navbar = () => (
   <nav className="max-w-8xl mx-auto flex items-center justify-between py-6 px-6 md:px-20">
     <a
       href={`#`}
-      className="text-accent font-medium font-accent text-2xl md:text-4xl flex"
+      className="text-primary font-medium font-accent text-2xl md:text-3xl flex"
     >
       Nekonote LLC
     </a>

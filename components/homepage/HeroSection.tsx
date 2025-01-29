@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export const HeroSection = () => {
   return (
     <div className="flex flex-col px-6 md:px-20 py-12 md:py-20 max-w-7xl w-full space-y-6 md:space-y-16">
@@ -13,14 +15,13 @@ export const HeroSection = () => {
       <a
         href="https://trysouschef.com"
         target="_blank"
-        className="md:text-xl pt-6 flex items-center space-x-4 md:space-x-6 ml-auto hover:fill-[#cf8360]"
+        className="md:text-xl pt-6 flex items-center space-x-4 md:space-x-6 ml-auto hover:fill-[#FFCD02]"
       >
-        <span className="underline">
+        <span className="underline hover:text-[#FFCD02]">
           Check out our premier software offering - Souschef
         </span>
         <svg
           version="1.0"
-          xmlns="http://www.w3.org/2000/svg"
           width="1280.000000pt"
           height="640.000000pt"
           viewBox="0 0 1280.000000 640.000000"
@@ -44,6 +45,23 @@ export const HeroSection = () => {
           </g>
         </svg>
       </a>
+
+      <div className="grid grid-cols-2">
+        <Image
+          src="/images/dalle-canute.png"
+          width={500}
+          height={500}
+          alt="canute the cat"
+          className="md:max-w-sm"
+        />
+        <Image
+          src="/images/dalle-poncho.png"
+          width={500}
+          height={500}
+          alt="poncho the cat"
+          className="md:max-w-sm"
+        />
+      </div>
     </div>
   );
 };

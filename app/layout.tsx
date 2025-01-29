@@ -14,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme="light" data-color="pink">
+    <html lang="en">
       {/* Apply theme dynamically */}
       <body
         className={`${recoleta.variable} ${basisGrotesque.variable} antialiased bg-primary text-primary`}

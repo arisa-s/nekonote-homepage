@@ -38,7 +38,7 @@ const WorkItem = ({
           width={500}
           height={500}
           alt={title}
-          className="w-full border bg-invert"
+          className="w-full bg-invert px-24"
         />
         <div className="flex flex-col items-center space-y-2">
           <label className="text-xl md:text-2xl font-accent font-semibold">
