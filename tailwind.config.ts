@@ -12,6 +12,7 @@ export default {
         primary: "var(--text-primary)",
         accent: "var(--canute)",
         background: "var(--bg)",
+        accent2: "var(--poncho)",
       },
       backgroundColor: {
         primary: "var(--bg)",

@@ -15,7 +15,10 @@ export const MobileNavMenu = ({}) => {
 
   return (
     <>
-      <button onClick={() => setIsOpen(!isOpen)} className="text-2xl">
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className={`right-0 text-2xl z-50 ${isOpen ? "text-invert" : ""}`}
+      >
         {isOpen ? <FiX /> : <FiMenu />}
       </button>
       {isOpen ? (
@@ -23,7 +26,7 @@ export const MobileNavMenu = ({}) => {
           initial="closed"
           animate={isOpen ? "open" : "closed"}
           variants={variants}
-          className="absolute left-0 right-0 top-16 z-20 w-full flex-col items-center bg-accent text-invert p-6"
+          className="absolute left-0 right-0 top-0 z-20 w-full flex-col items-center bg-accent text-invert p-6"
         >
           <div onClick={() => setIsOpen(false)}>
             {Object.values(SECTIONS).map(({ key, title }) => (

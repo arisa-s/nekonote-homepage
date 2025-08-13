@@ -1,13 +1,13 @@
 export const AboutSection = () => {
   return (
-    <div className="max-w-8xl space-y-8">
-      <p className="text-xl md:text-3xl leading-normal font-accent">
-        Inspired by the Japanese saying “Nekonote mo karitai,” which means
-        I&apos;d even want to borrow a cat&apos;s hand when overwhelmed with
-        busyness, Nekonote LLC aims to ease the small pains of daily activities
-        and enrich life with our software solutions.
-      </p>
-      <p className="md:text-xl text-secondary">
+    <div className="w-full space-y-8">
+      <h1 className="text-5xl md:text-8xl  font-light">
+        Inspired by the Japanese saying{" "}
+        <span className="text-accent font-accent">“Nekonote mo karitai”</span>
+        (so busy I&apos;d even borrow a cat&apos;s hand), Nekonote LLC creates
+        software to make everyday tasks easier and life moren enjoyable.
+      </h1>
+      {/* <p className="md:text-xl text-secondary">
         Our flagship product, Souschef, is an AI-powered cooking app designed to
         simplify meal preparation.
       </p>
@@ -15,7 +15,7 @@ export const AboutSection = () => {
         We now offer design and development services to clients worldwide,
         bringing our expertise in crafting intuitive and impactful digital
         experiences.
-      </p>
+      </p> */}
 
       <div className="space-y-2 pt-12">
         <label className="text-medium">SERVICES</label>

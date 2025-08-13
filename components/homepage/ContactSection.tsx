@@ -1,11 +1,14 @@
 export const ContactSection = () => {
   return (
-    <div className="flex flex-col space-y-6 md:space-y-12">
-      <p className="text-xl md:text-3xl">Get in touch</p>
-      <a className="md:text-xl" href="mailto:team@nekonote.co">
-        team@neknote.co
+    <h1 className="text-5xl md:text-8xl  font-light">
+      For any inquiries , please reach out to:{" "}
+      <a
+        className="font-accent text-accent break-all hover:text-accent2"
+        href="mailto:team@nekonote.co"
+      >
+        TEAM@NEKONOTE.CO
       </a>
-    </div>
+    </h1>
   );
 };
 
