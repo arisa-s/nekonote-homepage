@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const WorkSection = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-36">
       <WorkItem
         title="Souschef: AI Cooking App"
         image="/images/work/souschefLogo.png"
@@ -10,9 +10,27 @@ export const WorkSection = () => {
         role="Idea・Design・Development"
       />
       <WorkItem
+        title="Doomers: Homepage"
+        image="/images/work/doomersLogo.png"
+        href="https://www.doomerslondon.com/"
+        role="Design・Development"
+      />
+      <WorkItem
+        title="Studio Defa: Homepage"
+        image="/images/work/studioDefaLogo.png"
+        href="https://www.studiodefa.com/"
+        role="Design・Development"
+      />
+      <WorkItem
         title="Paratext: Poetry Blog"
         image="/images/work/paratextLogo.png"
         href="https://paratext.ee"
+        role="Design・Development"
+      />
+      <WorkItem
+        title="Makkiki: Shopify Store"
+        image="/images/work/makkikiLogo.png"
+        href="https://makkiki.co.jp/"
         role="Design・Development"
       />
     </div>
