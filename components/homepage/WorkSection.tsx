@@ -1,6 +1,6 @@
 export const WorkSection = () => {
   return (
-    <div className="max-w-8xl flex flex-col gap-12">
+    <div className="max-w-8xl flex flex-col gap-6 md:gap-12">
       <WorkItem
         title="Souschef"
         // image="/images/work/souschefLogo.png"
@@ -49,7 +49,7 @@ const WorkItem = ({
   return (
     <a href={href} target="_blank" rel="noreferrer">
       <h1
-        className="text-3xl md:text-5xl font-light underline"
+        className="text-2xl md:text-5xl font-light underline"
         style={{
           textDecorationThickness: "1px",
           textUnderlineOffset: "8px",
