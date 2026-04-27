@@ -8,15 +8,21 @@ export const WorkSection = () => {
         role="Idea・Design・Dev"
       />
       <WorkItem
-        title="Doomers"
-        // image="/images/work/doomersLogo.png"
-        href="https://www.doomerslondon.com/"
-        role="Design・Dev"
-      />
-      <WorkItem
         title="Studio Defa"
         // image="/images/work/studioDefaLogo.png"
         href="https://www.studiodefa.com/"
+        role="Design・Dev"
+      />
+      <WorkItem
+        title="Folly Productions"
+        // image="/images/work/souschefLogo.png"
+        href="https://www.follyproductions.com/"
+        role="Design・Dev"
+      />
+      <WorkItem
+        title="Doomers"
+        // image="/images/work/doomersLogo.png"
+        href="https://www.doomerslondon.com/"
         role="Design・Dev"
       />
       <WorkItem
